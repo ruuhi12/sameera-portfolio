@@ -28,7 +28,7 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:28px 8%;
+    padding:25px 8%;
     background:#544349;
     position:sticky;
     top:0;
@@ -37,25 +37,27 @@ body{
 }
 
 .logo{
-    font-size:28px;
+    font-size:24px;
     font-weight:800;
     color:#F3E7D9;
-    letter-spacing:3px;
+    letter-spacing:2px;
+    display:flex;
+    align-items:center;
 }
 
 .logo span{
     background:#F3E7D9;
     color:#544349;
-    padding:8px 15px;
+    padding:6px 12px;
     border-radius:50%;
-    margin-right:12px;
+    margin-right:10px;
     font-weight:800;
 }
 
 .nav-links{
     list-style:none;
     display:flex;
-    gap:35px;
+    gap:30px;
 }
 
 .nav-links a{
@@ -63,28 +65,16 @@ body{
     color:#F3E7D9;
     font-weight:600;
     transition:0.3s;
-    position:relative;
 }
 
-.nav-links a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-6px;
-    width:0%;
-    height:2px;
-    background:#F3E7D9;
-    transition:0.3s;
-}
-
-.nav-links a:hover::after{
-    width:100%;
+.nav-links a:hover{
+    opacity:0.7;
 }
 
 /* ================= HERO ================= */
 
 .hero{
-    height:90vh;
+    min-height:90vh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -94,17 +84,16 @@ body{
 }
 
 .hero h1{
-    font-size:64px;
+    font-size:60px;
     font-weight:800;
     letter-spacing:3px;
     margin-bottom:20px;
-    position:relative;
 }
 
 .hero h1::after{
     content:"";
     display:block;
-    width:90px;
+    width:80px;
     height:4px;
     background:#544349;
     margin:18px auto 0;
@@ -118,7 +107,7 @@ body{
 }
 
 .btn{
-    padding:16px 45px;
+    padding:15px 40px;
     background:#544349;
     color:#F3E7D9;
     text-decoration:none;
@@ -138,12 +127,12 @@ body{
 /* ================= SECTIONS ================= */
 
 .section{
-    padding:110px 8%;
+    padding:100px 8%;
 }
 
 .section h2{
-    font-size:36px;
-    margin-bottom:50px;
+    font-size:34px;
+    margin-bottom:40px;
     font-weight:800;
     text-transform:uppercase;
 }
@@ -152,14 +141,9 @@ body{
 
 .box{
     background:white;
-    padding:45px;
+    padding:40px;
     border-radius:18px;
     box-shadow:0 15px 40px rgba(0,0,0,0.08);
-    transition:0.3s;
-}
-
-.box:hover{
-    transform:translateY(-8px);
 }
 
 /* ================= SKILLS ================= */
@@ -167,42 +151,32 @@ body{
 .skills-list{
     list-style:none;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:20px;
 }
 
 .skills-list li{
     background:#544349;
     color:#F3E7D9;
-    padding:18px;
+    padding:15px;
     text-align:center;
     border-radius:12px;
     font-weight:600;
-    transition:0.3s;
-}
-
-.skills-list li:hover{
-    transform:translateY(-6px);
 }
 
 /* ================= PROJECTS ================= */
 
 .projects-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:35px;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
 }
 
 .project-card{
     background:white;
-    padding:35px;
+    padding:30px;
     border-radius:18px;
     box-shadow:0 15px 40px rgba(0,0,0,0.08);
-    transition:0.3s;
-}
-
-.project-card:hover{
-    transform:translateY(-10px);
 }
 
 .project-card h3{
@@ -214,7 +188,7 @@ body{
 
 .contact-box{
     background:white;
-    padding:35px;
+    padding:30px;
     border-radius:18px;
     box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
@@ -223,11 +197,48 @@ body{
 
 footer{
     text-align:center;
-    padding:30px;
+    padding:25px;
     background:#544349;
     color:#F3E7D9;
     margin-top:80px;
-    letter-spacing:1px;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:36px;
+        letter-spacing:1px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .section{
+        padding:70px 6%;
+    }
+
+    .section h2{
+        font-size:26px;
+    }
+
+    .box{
+        padding:25px;
+    }
+
 }
 
 </style>
@@ -300,9 +311,6 @@ footer{
     </div>
 </section>
 
-<footer>
-    © 2026 SAMEERA HIDAYATH. All Rights Reserved.
-</footer>
 
 </body>
 </html>
