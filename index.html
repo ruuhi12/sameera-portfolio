@@ -1,316 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sameera Hidayath | Frontend Developer</title>
+  <meta charset="UTF-8">
+  <title>Sameera Hidayath | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Inter',sans-serif;
-}
-
-body{
-    background:#F3E7D9;
-    color:#544349;
-    scroll-behavior:smooth;
-}
-
-/* ================= NAVBAR ================= */
-
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 8%;
-    background:#544349;
-    position:sticky;
-    top:0;
-    z-index:100;
-    box-shadow:0 4px 20px rgba(0,0,0,0.15);
-}
-
-.logo{
-    font-size:24px;
-    font-weight:800;
-    color:#F3E7D9;
-    letter-spacing:2px;
-    display:flex;
-    align-items:center;
-}
-
-.logo span{
-    background:#F3E7D9;
-    color:#544349;
-    padding:6px 12px;
-    border-radius:50%;
-    margin-right:10px;
-    font-weight:800;
-}
-
-.nav-links{
-    list-style:none;
-    display:flex;
-    gap:30px;
-}
-
-.nav-links a{
-    text-decoration:none;
-    color:#F3E7D9;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.nav-links a:hover{
-    opacity:0.7;
-}
-
-/* ================= HERO ================= */
-
-.hero{
-    min-height:90vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:0 20px;
-    background:linear-gradient(180deg,#F3E7D9 60%,#efe2d3);
-}
-
-.hero h1{
-    font-size:60px;
-    font-weight:800;
-    letter-spacing:3px;
-    margin-bottom:20px;
-}
-
-.hero h1::after{
-    content:"";
-    display:block;
-    width:80px;
-    height:4px;
-    background:#544349;
-    margin:18px auto 0;
-    border-radius:10px;
-}
-
-.hero p{
-    font-size:20px;
-    margin-top:25px;
-    margin-bottom:35px;
-}
-
-.btn{
-    padding:15px 40px;
-    background:#544349;
-    color:#F3E7D9;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:600;
-    letter-spacing:1px;
-    transition:0.3s;
-    display:inline-block;
-}
-
-.btn:hover{
-    background:#3e3136;
-    transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
-}
-
-/* ================= SECTIONS ================= */
-
-.section{
-    padding:100px 8%;
-}
-
-.section h2{
-    font-size:34px;
-    margin-bottom:40px;
-    font-weight:800;
-    text-transform:uppercase;
-}
-
-/* ================= BOX STYLE ================= */
-
-.box{
-    background:white;
-    padding:40px;
-    border-radius:18px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.08);
-}
-
-/* ================= SKILLS ================= */
-
-.skills-list{
-    list-style:none;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-    gap:20px;
-}
-
-.skills-list li{
-    background:#544349;
-    color:#F3E7D9;
-    padding:15px;
-    text-align:center;
-    border-radius:12px;
-    font-weight:600;
-}
-
-/* ================= PROJECTS ================= */
-
-.projects-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-}
-
-.project-card{
-    background:white;
-    padding:30px;
-    border-radius:18px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.08);
-}
-
-.project-card h3{
-    margin-bottom:15px;
-    font-weight:700;
-}
-
-/* ================= CONTACT ================= */
-
-.contact-box{
-    background:white;
-    padding:30px;
-    border-radius:18px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.08);
-}
-
-/* ================= FOOTER ================= */
-
-footer{
-    text-align:center;
-    padding:25px;
-    background:#544349;
-    color:#F3E7D9;
-    margin-top:80px;
-}
-
-/* ================= MOBILE RESPONSIVE ================= */
-
-@media(max-width:768px){
-
-    .navbar{
-        flex-direction:column;
-        gap:15px;
-        text-align:center;
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
     }
 
-    .nav-links{
-        flex-direction:column;
-        gap:15px;
+    body {
+      background: linear-gradient(to right, #1e1e2f, #2d2d44);
+      color: #fff;
     }
 
-    .hero h1{
-        font-size:36px;
-        letter-spacing:1px;
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: rgba(0, 0, 0, 0.4);
+      position: sticky;
+      top: 0;
     }
 
-    .hero p{
-        font-size:16px;
+    nav h2 {
+      font-size: 20px;
+      letter-spacing: 2px;
     }
 
-    .section{
-        padding:70px 6%;
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
     }
 
-    .section h2{
-        font-size:26px;
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 15px;
+      transition: 0.3s;
     }
 
-    .box{
-        padding:25px;
+    nav ul li a:hover {
+      color: #00c3ff;
     }
 
-}
+    /* HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
 
-</style>
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+
+    /* SECTION */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #00c3ff;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .skill-box {
+      background: #3b3b5c;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-5px);
+      background: #00c3ff;
+      color: black;
+    }
+
+    /* PROJECTS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .project-box {
+      background: #3b3b5c;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .project-box h3 {
+      margin-bottom: 10px;
+      color: #00c3ff;
+    }
+
+    /* CONTACT */
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      margin-top: 40px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav ul {
+        gap: 15px;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .skills {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
 </head>
-
 <body>
 
-<nav class="navbar">
-    <div class="logo">
-        <span>H</span>SAMEERA HIDAYATH
-    </div>
-    <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Sameera Hidayath</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-</nav>
+  </nav>
 
-<section class="hero">
-    <div>
-        <h1>FRONTEND DEVELOPER</h1>
-        <p>2nd Year BCA Student | Passionate About UI & Web Development</p>
-        <a href="#projects" class="btn">View My Work</a>
-    </div>
-</section>
+  <!-- HERO -->
+  <div class="hero" id="about">
+    <h1>Frontend Developer</h1>
+    <p>
+      Motivated BCA student with internship experience in frontend development.
+      Skilled in HTML, CSS, JavaScript, JSON, and API handling.
+      I enjoy building responsive, aesthetic, and user-friendly websites.
+    </p>
+  </div>
 
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <div class="box">
-        <p>
-            I am a motivated BCA student with internship experience in frontend development.
-            Skilled in HTML, CSS, JavaScript, JSON, and API handling.
-            I enjoy building responsive, aesthetic and user-friendly websites.
-        </p>
-    </div>
-</section>
-
-<section id="skills" class="section">
+  <!-- SKILLS -->
+  <section id="skills">
     <h2>Technical Skills</h2>
-    <ul class="skills-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>JSON</li>
-        <li>API Handling</li>
-        <li>Responsive Design</li>
-    </ul>
-</section>
+    <div class="skills">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">JSON</div>
+      <div class="skill-box">API Handling</div>
+      <div class="skill-box">Responsive Design</div>
+    </div>
+  </section>
 
-<section id="projects" class="section">
+  <!-- PROJECTS -->
+  <section id="projects">
     <h2>Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <h3>Daily Lines</h3>
-            <p>A quote-sharing platform where users can create accounts, post and manage their own quotes.</p>
-        </div>
-        <div class="project-card">
-            <h3>DO NOW6</h3>
-            <p>A responsive business website with structured layout and integrated WhatsApp contact feature.</p>
-        </div>
-    </div>
-</section>
+    <div class="projects">
+      <div class="project-box">
+        <h3>Daily Lines</h3>
+        <p>
+          A quote-sharing platform where users can create accounts,
+          post, edit, and manage their own quotes.
+        </p>
+      </div>
 
-<section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <div class="contact-box">
-        <p>Email: ruuhi676@gmail.com</p>
-        <p>Location: Chennai, Tamil Nadu</p>
+      <div class="project-box">
+        <h3>DO NOW6</h3>
+        <p>
+          A responsive business website with structured layout
+          and integrated WhatsApp contact features.
+        </p>
+      </div>
     </div>
-</section>
+  </section>
 
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: ruuhi676@gmail.com</p>
+    <p>Phone: 9360792611</p>
+    <p>Location: Chennai, Tamil Nadu</p>
+  </section>
+
+  <footer>
+    © 2026 Sameera Hidayath | All Rights Reserved
+  </footer>
 
 </body>
 </html>
